@@ -24,7 +24,7 @@ python -m venv venv
 source venv/bin/activate (for Mac OS)
 venv\Scripts\activate (for Windows)
 pip install —r requirements.txt
-rename file .env.sample in .env and put your DB credentials
+rename file .env.sample in .env and put your DB credentials and SECRET_KEY
 
 python manage.py migrate 
 python manage.py runserver
@@ -34,6 +34,8 @@ Docker should be installed
 ```
 docker-compose build
 docker-compose up
+docker exec -it CONTAINER_ID bash
+python manage.py createsuperuser
 ```
 
 ### To get access to the app
@@ -46,3 +48,8 @@ You can use ModHeader plugin for your browser.
 - start from this endpoint:  
    http://127.0.0.1:8000/api/cinema/  
    http://127.0.0.1:8000/api/doc/swagger/
+
+### Demo
+![img_1.png](./img_readme/Screenshot_1.jpg)
+
+![img_2.png](./img_readme/Screenshot_2.jpg)
