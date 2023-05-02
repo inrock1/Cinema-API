@@ -24,7 +24,7 @@ python -m venv venv
 source venv/bin/activate (for Mac OS)
 venv\Scripts\activate (for Windows)
 pip install —r requirements.txt
-rename file .env.sample in .env and put your DB credentials and SECRET_KEY
+rename file .env.sample in .env, put your credentials and use the appropriate values
 
 python manage.py migrate 
 python manage.py runserver
